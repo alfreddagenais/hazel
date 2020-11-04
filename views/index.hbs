@@ -72,8 +72,8 @@
       }
 
       .fileType {
-       font-weight: 600;
-       flex-grow: 1;
+        font-weight: 600;
+        flex-grow: 1;
       }
 
       .url {
@@ -134,7 +134,7 @@
           <div id="list">
             {{#each files}}
               <div class="item">
-                <div class="fileType">{{@key}}: <span class="url"><a href={{this.url}}>/latest/{{@key}}</a></span></div>
+                <div class="fileType">{{@key}}: <span class="url"><a href={{this.urlDownload}} data-url={{this.url}} target="_blank">/latest/{{@key}}</a></span></div>
                 <div class="size">{{this.size}} MB</div>
               </div>
             {{/each}}
