@@ -6,3 +6,5 @@ node_modules
 
 # environment file
 .env
+
+package-lock.json
